@@ -14,3 +14,9 @@ How to set this up:
 9) You can change the page_title in the config.php but it wont change anything you will have to do it in the index.php in the root folder
 10) Open up the sharex upload file with notepad and change the site to https:\/\/example.com\/upload.php
 11) Change the key to your key that you set in config.php
+12) Run the sharex file upload file with sharex and all you have to do is set your destination on sharex.
+
+
+
+Known Issues
+1) When you have the link for the screenshot you have to remove .png on the end for it to work

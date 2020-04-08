@@ -20,3 +20,6 @@ How to set this up:
 
 Known Issues
 1) When you have the link for the screenshot you have to remove .png on the end for it to work
+
+
+Credit for sharex file uploader https://github.com/JoeGandy/ShareX-Custom-Upload

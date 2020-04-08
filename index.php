@@ -31,6 +31,5 @@ function randomHex() {
         
                 
         <img src="/border.php?name=<?php echo $vars[0]; ?>">
-		Thank you to Maineiac#0001 for helping this work
 </body>
 </html>

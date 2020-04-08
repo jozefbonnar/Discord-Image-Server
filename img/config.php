@@ -14,7 +14,7 @@ return [
     'redirect_url' => 'https://jozefb.co.uk/',
 
     /* This is a list of IPs that can access the gallery page (Leave empty for universal access) */
-    'allowed_ips' => ['127.0.0.1', '192.168.1.50','192.168.1.1', '94.13.151.55', '::1', '0.0.0.0'],
+    'allowed_ips' => ['127.0.0.1', 'iphere', '::1', '0.0.0.0'],
 
     /* Page title of the gallery page */
     'page_title' => 'My Upload Site',

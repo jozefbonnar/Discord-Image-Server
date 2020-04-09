@@ -20,6 +20,6 @@ How to set this up:
 
 Known Issues
 1) When you have the link for the screenshot you have to remove .png on the end for it to work
-
+2) Only works with JPG images unless you change the border.php
 
 Credit for sharex file uploader https://github.com/JoeGandy/ShareX-Custom-Upload

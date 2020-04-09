@@ -1,12 +1,12 @@
 <?php
-$vars = ($_GET['name']);
+$colourthene = $_GET["colour"];
 /** Set source image location. You can use URL here **/
 $imageLocation = 'img/' . $_GET["name"] . '.png';
 /** Set border format **/
 $borderWidth = 10;
 
 // You can use color name, hex code, rgb() or rgba()
-$borderColor = 'rgba(8, 79, 255, 1)';
+$borderColor = '#' . $_GET["colour"] . '';
 
 // Padding between image and border. Set to 0 to give none
 $borderPadding = 0;

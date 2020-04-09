@@ -9,6 +9,7 @@ function randomHex() {
    }
    return $color;
 }
+$colourtheme = randomHex();
 ?> 
 <html>
     <head>
@@ -18,11 +19,11 @@ function randomHex() {
 
         <meta property="og:site_name" content="Alienwarez">
         <meta property="og:url" content="https://jozef.cf/img/<?php echo $vars[0]; ?>.png">
-        <meta property="og:title" content="<?php echo date("F d Y H:i:s.", filemtime("img/$vars[0].png")); ?>">
+        <meta property="og:title" content="<?php echo date("F d Y H:i:s", filemtime("img/$vars[0].png")); ?>">
         <meta property="og:description" content="">
         <meta property="og:type" content="article">
-        <meta name="theme-color" content=<?php echo randomHex(); ?>>
-        <meta content='/border.php?name=<?php echo $vars[0]; ?>' property='og:image'>
+        <meta name="theme-color" content=<?php echo $colourtheme; ?>>
+        <meta content='/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>' property='og:image'>
         <meta name="author" content="Alienwarez#0711">
         <meta name="twitter:card" content="summary_large_image">
 
@@ -30,6 +31,6 @@ function randomHex() {
     <body>
         
                 
-        <img src="/border.php?name=<?php echo $vars[0]; ?>">
+        <img src="/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>">
 </body>
 </html>

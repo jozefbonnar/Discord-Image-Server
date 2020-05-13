@@ -1,6 +1,7 @@
 # Discord-Image-Server
 A image server that works with discord and uploads through sharex
-An example in discord https://jozef.cf/8fZtDlM75N
+An example in discord image https://jozef.cf/9aUQVkEADF
+An example of gif discord image https://v.jozef.cf/qFLaQTwWHJ
 
 How to set this up:
 1) Either download this repositary as a zip or clone it into your webspace, after unzip it.
@@ -10,12 +11,11 @@ How to set this up:
 5) We are now going to setup the sharex part in the folder IMG you will find a config.php open it up and change the securekey to what ever you want
 6) Change the output url to your site like https://example.com/
 7) Change the request url to your site like https://example.com/upload.php
-8) Add your ip address to the config like ['127.0.0.1', 'your ip', '::1', '0.0.0.0'],
-9) You can change the page_title in the config.php but it wont change anything you will have to do it in the index.php in the root folder
-10) Open up the sharex upload file with notepad and change the site to https:\/\/example.com\/upload.php
-11) Change the key to your key that you set in config.php
-12) Run the sharex file upload file with sharex and all you have to do is set your destination on sharex.
+8) You can change the page_title in the config.php but it wont change anything you will have to do it in the index.php in the root folder
+9) Run the sharex file upload file with sharex and all you have to do is set your destination on sharex.
+10) Change the key in sharex to the one you have set in the config.php
 
+If you want to install the gif you could either set this up in another sub domain or a another directory its pretty much the same but make your hotkey force set to the new gif uploader here https://jozef.cf/h7bIscxkUZ
 
 
 Known Issues

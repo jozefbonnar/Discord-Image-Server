@@ -21,6 +21,7 @@ If you want to install the gif you could either set this up in another sub domai
 Known Issues
 1) When you have the link for the screenshot you have to remove .png on the end for it to work
 2) Only works with PNG images unless you change the border.php
+3) If you have like an error saying Directory or like change permissions 777 that could be the reason but another reason is that the php.ini is set to like a max 2mb upload, i have uploaded my php.ini for a reference
 
 Credit for sharex file uploader https://github.com/JoeGandy/ShareX-Custom-Upload
 Credit for Maineiac for helping for the .htaccess and knowledge on how to do this

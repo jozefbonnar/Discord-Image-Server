@@ -23,7 +23,7 @@ $colourtheme = randomHex();
         <meta property="og:description" content="">
         <meta property="og:type" content="article">
         <meta name="theme-color" content=<?php echo $colourtheme; ?>>
-        <meta content='/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>' property='og:image'>
+        <meta content='/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>&size=<?php echo ($vars[1]); ?>' property='og:image'>
         <meta name="author" content="Alienwarez#0711">
         <meta name="twitter:card" content="summary_large_image">
 
@@ -32,7 +32,7 @@ $colourtheme = randomHex();
 		<?php
 		if (!empty($vars[0])) {
 		?>
-			<img src="/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>">
+			<img src="/border.php?name=<?php echo $vars[0] ?>&colour=<?php echo substr($colourtheme,1); ?>&size=<?php echo ($vars[1]); ?>">
 		<?php
 		} else { echo "You have not requested a image in the url bar or you have left .png in the url";}
 		?>

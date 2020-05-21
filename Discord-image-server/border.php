@@ -2,8 +2,15 @@
 $colourthene = $_GET["colour"];
 /** Set source image location. You can use URL here **/
 $imageLocation = 'img/' . $_GET["name"] . '.png';
+$size = $_GET["size"];
+
+#If the value is empty is defaults to 10
+if (empty($size)) {
+    $size = '10';
+}
+
 /** Set border format **/
-$borderWidth = 10;
+$borderWidth = $size;
 
 // You can use color name, hex code, rgb() or rgba()
 $borderColor = '#' . $_GET["colour"] . '';

@@ -17,13 +17,13 @@ if (isset($_POST['key'])) {
 
         if (move_uploaded_file($_FILES['d']['tmp_name'], $target)) {
             $target_parts = explode('/img/', $target);
-            echo $uploadhost.end($target_parts);
+            echo substr($uploadhost.end($target_parts), 0, -4);
         } else {
-            echo 'File upload failed, ensure permissions are writeable on the directory (777), see full config: https://github.com/JoeGandy/ShareX-Custom-Upload/blob/master/README.md#automatic-setup';
+            echo 'File upload failed, ensure permissions are writeable on the directory (777)';
         }
     } else {
-        echo 'The key provided does not match your config.php, see full config: https://github.com/JoeGandy/ShareX-Custom-Upload/blob/master/README.md#automatic-setup';
+        echo 'The key provided does not match your config.php';
     }
 } else {
-    echo 'You may not upload without the key parameter, see full config: https://github.com/JoeGandy/ShareX-Custom-Upload/blob/master/README.md#automatic-setup';
+    echo 'You may not upload without the key parameter';
 }

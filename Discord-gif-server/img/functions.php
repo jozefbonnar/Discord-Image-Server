@@ -16,11 +16,93 @@ function isImage($file)
 }
 
 function generateRandomName($type, $length) {
-    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 1);
      if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
         return $name.'.'.$type;
     } else {
-        return generateRandomName($type, $length);
+        return generateRandomName2($type, $length);
+    }
+}
+
+function generateRandomName2($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 2);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName3($type, $length);
+    }
+}
+
+function generateRandomName3($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 3);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName4($type, $length);
+    }
+}
+
+function generateRandomName4($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 4);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName5($type, $length);
+    }
+}
+
+function generateRandomName5($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 5);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName6($type, $length);
+    }
+}
+
+function generateRandomName6($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 6);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName7($type, $length);
+    }
+}
+
+function generateRandomName7($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 7);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName8($type, $length);
+    }
+}
+
+function generateRandomName8($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 8);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName9($type, $length);
+    }
+}
+
+function generateRandomName9($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 9);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName10($type, $length);
+    }
+}
+
+
+function generateRandomName10($type, $length) {
+    $name = substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, 10);
+     if (!file_exists(__DIR__.'/'.$name.'.'.$type)) {
+        return $name.'.'.$type;
+    } else {
+        return generateRandomName10($type, $length);
     }
 }
 

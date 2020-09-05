@@ -4,7 +4,7 @@ return [
     /* This is a secure key that only you should know, an added layer of security for the image upload */
     'secure_key' => 'enterkey',
 
-    /* This is the url your output will be, usually http://www.domain.com/u/, also going to this url will be the gallery page */
+    /* This is the url your output will be, usually http://www.domain.com/
     'output_url' => 'https://jozef.cf/',
 
     /* This request url, so the path pointing to the uplaod.php file */
